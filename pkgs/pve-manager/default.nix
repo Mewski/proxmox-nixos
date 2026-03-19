@@ -65,12 +65,12 @@ in
 perl540.pkgs.toPerlModule (
   stdenv.mkDerivation rec {
     pname = "pve-manager";
-    version = "9.1.4";
+    version = "9.1.6";
 
     src = fetchgit {
       url = "git://git.proxmox.com/git/${pname}.git";
-      rev = "5ac30304265fbd8e";
-      hash = "sha256-nx6FyDSktgA70uGZPdjDsKP82nXrftlZ/M9Anghq2kU=";
+      rev = "71482d1833ded40a";
+      hash = "sha256-kydLVhu7mXJRGp8baKUsWAoB6ZJ2DLs0IqdP+jaJtFs=";
     };
 
     patches = [
