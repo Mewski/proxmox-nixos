@@ -6,11 +6,11 @@
 
 stdenv.mkDerivation rec {
   pname = "unifont";
-  version = "15.1.05";
+  version = "17.0.03";
 
   src = fetchurl {
     url = "mirror://gnu/unifont/unifont-${version}/unifont-${version}.tar.gz";
-    hash = "sha256-0nX1X0NYdQ4PhjBbkuh7iOszCqRsFfVT0u3wR/scI/o=";
+    hash = "sha256-miaqmt+o6x+RsM2bg+f5XqnhTG6FvnGqOrDfXLTmnDU=";
   };
 
   makeFlags = [
