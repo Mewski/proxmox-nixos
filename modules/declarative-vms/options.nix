@@ -1268,8 +1268,10 @@ in
             example = "std";
           };
           clipboard = mkOption {
-            type = types.enum [ "vnc" ];
-            default = "vnc";
+            type = types.nullOr (
+              types.enum [ "vnc" ]
+            );
+            default = null;
             description = "Enable clipboard sharing for VNC.";
           };
           memory = mkOption {
